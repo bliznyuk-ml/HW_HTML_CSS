@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Footer</title>
+    <style>
+        body {
+            color: white;
+            font-family: sans-serif;
+            font-size: 18pt;
+        }
+
+        footer {
+            width: 100%;
+            background: rgb(42, 79, 110);
+            height: 23rem;
+        }
+
+        hr {
+            color: white;
+        }
+
+        footer > div:first-child {
+            float: left;
+            position: relative;
+            left: 200px;
+            top: 70px;
+        }
+
+        footer > div:nth-child(2) {
+            float: left;
+            position: relative;
+            left: 750px;
+            top: 70px;
+        }
+
+        footer > div > div:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        div {
+            line-height: 2rem;
+        }
+
+        figure {
+            float: left;
+            position: relative;
+            left: 1100px;
+            top: 70px
+        }
+
+        figure:nth-of-type(2) {
+            position: relative;
+            left: 695px;
+        }
+
+        img {
+            margin: 20px;
+
+        }
+
+        img:hover {
+            cursor: pointer;
+            opacity: 1;
+        }
+
+        figure:nth-of-type(2):hover {
+            opacity: 1;
+        }
+
+        .visible {
+            opacity: 1;
+        }
+
+        .hidden {
+            opacity: 0;
+        }
+
+        hr {
+            clear: both;
+            position: relative;
+            margin: 50px;
+            top: 80px;
+        }
+
+        .copyright {
+            position: relative;
+            top: 70px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<footer>
+    <div>
+        <div>Home</div>
+        <div>About</div>
+        <div>Gallery</div>
+        <div>News</div>
+    </div>
+    <div>
+        <div>Blog</div>
+        <div>FAQ</div>
+        <div>Contacts</div>
+        <div>Privacy & cookies</div>
+    </div>
+    <figure>
+        <img class="visible" src="icons_hw_module_3/fb_gray.png" alt="fb">
+        <img class="visible" src="icons_hw_module_3/insta_gray.png" alt="insta">
+        <img class="visible" src="icons_hw_module_3/youtube_gray.png" alt="youtube">
+    </figure>
+    <figure>
+        <img class="hidden" src="icons_hw_module_3/fb.png" alt="fb">
+        <img class="hidden" src="icons_hw_module_3/insta.png" alt="insta">
+        <img class="hidden" src="icons_hw_module_3/youtube.png" alt="youtube">
+    </figure>
+    <hr>
+    <div class="copyright">Copyright &#169; Company 2018-2019</div>
+</footer>
+</body>
+</html>

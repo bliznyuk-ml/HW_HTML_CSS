@@ -17,11 +17,14 @@
             padding: 10px;
             background: rgb(245, 245, 245);
         }
-         tr th{
-             top: 0px;
+         tr th:nth-child(n+1){
+             top: 0;
              position: sticky;
              background-color: rgb(173, 216, 230);
          }
+
+
+
          td:first-child{
              background: rgb(173, 216, 230);
              font-weight: bold;
@@ -43,6 +46,7 @@
     </style>
 </head>
 <body>
+<div style="position: relative">
 <table>
     <thead>
     <tr>
@@ -138,6 +142,7 @@
 
     </tbody>
 </table>
+</div>
 
 </body>
 </html>
