@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Member_Login</title>
+    <style>
+
+        body {
+            font-family: sans-serif;
+        }
+
+        header {
+            width: 400px;
+            height: 480px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(228, 93, 68);
+        }
+
+        input {
+            text-align: center;
+        }
+
+        div + div {
+            margin-top: 20px;
+        }
+
+        div:first-child {
+            position: sticky;
+            top: 40px;
+            width: 300px;
+            height: 300px;
+            background-color: rgb(228, 228, 228);
+            padding-top: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+
+
+        div {
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+        }
+
+        input {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 260px;
+            height: 40px;
+            border: none;
+        }
+
+        button:first-of-type{
+            display: inline-block;
+            box-sizing: border-box;
+            width: 260px;
+            height: 40px;
+            background-color: rgb(50, 167, 90);
+            color: lightgrey;
+            box-shadow: 4px 4px 3px dimgray;
+            border: none;
+        }
+
+        button:nth-last-of-type(2){
+            display: inline-block;
+            box-sizing: border-box;
+            width: 130px;
+            height: 40px;
+            background-color: rgb(58, 91, 160);
+            color: lightgrey;
+            box-shadow: 4px 4px 3px dimgray;
+            border: none;
+            margin-right: 5px;
+        }
+
+        button{
+            display: inline-block;
+            box-sizing: border-box;
+            width: 130px;
+            height: 40px;
+            background-color: rgb(28, 183, 235);
+            color: lightgrey;
+            box-shadow: 4px 4px 3px dimgray;
+            border: none;
+            margin-left: 5px;
+        }
+
+        button:first-of-type:hover {
+            background-color: rgb(50, 150, 90);
+        }
+
+        button:nth-last-of-type(2):hover {
+            background-color: rgb(58, 80, 130);
+        }
+
+        button:hover {
+            background-color: rgb(28, 160, 200);
+        }
+
+        button:active {
+            transform: translateY(4px);
+            box-shadow: 2px 2px 3px dimgray;
+        }
+
+        .forgot-password {
+            color: rgb(228, 93, 68);
+        }
+
+        .or-login {
+            color: rgb(228, 228, 228);
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div>
+        <h2>Member Login</h2>
+        <div>
+            <label for="Username"></label>
+            <input name="Username" id="Username"
+                   type="text"
+                   placeholder="Username">
+        </div>
+        <div>
+            <label for="password"></label>
+            <input name="Pssword" id="password"
+                   type="password"
+                   placeholder="Password">
+        </div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+        <div class="forgot-password">
+            Forgot password?
+        </div>
+    </div>
+    <div class="or-login">
+        ... or log in with:
+    </div>
+    <div>
+        <button type="submit">Facebook</button>
+        <button type="submit">Twitter</button>
+    </div>
+</header>
+</body>
+</html>
