@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        form {
+            box-shadow: 0 0 4px 5px lightgray;
+            background-color: rgb(250, 250, 250);
+            max-width: 1200px;
+            min-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .registration {
+            float: left;
+            max-width: 100%;
+            min-width: 300px;
+            padding-left: 20px;
+        }
+
+        .personal_details {
+            clear: none;
+            display: inline-block;
+            width: 100%;
+            min-width: 300px;
+
+            margin-left: 20px;
+        }
+
+        img {
+            width: 25px;
+        }
+
+        input, select {
+            background-color: rgb(250, 250, 250);
+            border: none;
+            border-bottom: 1px solid silver;
+            line-height: 25px;
+            margin: 20px 10px;
+            font-size: 10pt;
+        }
+
+        .long_form {
+            width: 100%;
+            min-width: 220px;
+            max-width: 480px;
+            box-sizing: border-box;
+        }
+
+        .short_form {
+            width: 220px;
+            box-sizing: border-box;
+        }
+
+        .personal_form {
+            display: inline-block;
+            width: 250px;
+            box-sizing: border-box;
+            margin-left: 20px;
+        }
+
+        .agreement {
+            /*clear: none;*/
+            width: 400px;
+            box-sizing: border-box;
+            margin-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            width: 200px;
+            height: 40px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            border: none;
+            background-color: cadetblue;
+            color: whitesmoke;
+            margin: 30px;
+        }
+
+        .container_button {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+    </style>
+</head>
+<body>
+<form>
+
+    <div class="registration">
+        <h2>Registration form</h2>
+        <img src="icons_form_registration/username.png" alt="username">
+        <label for="username"></label>
+        <input name="username"
+               type="text"
+               id="username"
+               placeholder="Username"
+               class="long_form"><br>
+        <img src="icons_form_registration/email.png" alt="email">
+        <label for="email"></label>
+        <input name="email"
+               type="email"
+               id="email"
+               placeholder="Email address"
+               class="long_form"><br>
+        <img src="icons_form_registration/pswd.png" alt="password">
+        <label for="password"></label>
+        <input name="password"
+               type="password"
+               id="password"
+               placeholder="Password"
+               class="short_form">
+        <label for="confirm_password"></label>
+        <input name="confirm_password"
+               type="password"
+               id="confirm_password"
+               placeholder="Confirm password"
+               class="short_form"
+               style="margin-left: 35px">
+    </div>
+
+    <!--        <div class="personal_details">-->
+    <h2 class="personal_details">Personal details</h2>
+    <div>
+        <label for="first_name"></label>
+        <input name="first_name"
+               type="text"
+               id="first_name"
+               placeholder="First name"
+               class="personal_form">
+        <label for="last_name"></label>
+        <input name="last_name"
+               type="text"
+               id="last_name"
+               placeholder="Last name"
+               class="personal_form"><br>
+
+
+        <label for="grnder"></label>
+        <select name="gender"
+                id="grnder"
+                class="personal_form">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <label for="date"></label>
+        <input name="date"
+               type="date"
+               id="date"
+               class="personal_form">
+    </div>
+    <!--        </div>-->
+    <div class="agreement">
+        <div>
+            <label for="receive_news"></label>
+            <input type="checkbox"
+                   id="receive_news">I want to receive news and special offers
+        </div>
+        <div>
+            <label for="agree"></label>
+            <input type="checkbox"
+                   id="agree">I agree with Terms and Conditions
+        </div>
+    </div>
+    <hr>
+    <div class="container_button">
+        <button type="submit">SUBMIT</button>
+    </div>
+</form>
+</body>
+</html>
